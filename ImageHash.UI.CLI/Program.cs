@@ -42,17 +42,17 @@ internal static class Program
     Console.WriteLine($"ImageFile1 = {opt.ImageFile1Path}");
     Console.WriteLine($"ImageFile2 = {opt.ImageFile2Path}");
     Console.WriteLine($"  Average:");
-    Console.WriteLine($"    hash1  = {avg1}");
-    Console.WriteLine($"    hash2  = {avg2}");
-    Console.WriteLine($"      diff = {avgSim}%");
+    Console.WriteLine($"    hash1   = {avg1}");
+    Console.WriteLine($"    hash2   = {avg2}");
+    Console.WriteLine($"      match = {avgSim}%");
     Console.WriteLine($"  Difference:");
-    Console.WriteLine($"    hash1  = {diff1}");
-    Console.WriteLine($"    hash2  = {diff2}");
-    Console.WriteLine($"      diff = {diffSim}%");
+    Console.WriteLine($"    hash1   = {diff1}");
+    Console.WriteLine($"    hash2   = {diff2}");
+    Console.WriteLine($"      match = {diffSim}%");
     Console.WriteLine($"  Perceptual:");
-    Console.WriteLine($"    hash1  = {per1}");
-    Console.WriteLine($"    hash2  = {per2}");
-    Console.WriteLine($"      diff = {perSim}%");
+    Console.WriteLine($"    hash1   = {per1}");
+    Console.WriteLine($"    hash2   = {per2}");
+    Console.WriteLine($"      match = {perSim}%");
   }
 
   private static Task HandleParseError(IEnumerable<Error> errs)
